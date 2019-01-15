@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapping.Pattern1", "AutoMapping.Pattern1\AutoMapping.Pattern1.csproj", "{9F0EFD3C-153D-44FB-ACEC-BC5F18B433E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapping.Pattern2", "AutoMapping.Pattern2\AutoMapping.Pattern2.csproj", "{05E4E31E-6317-47E5-AE6A-882D6CFBE8AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F0EFD3C-153D-44FB-ACEC-BC5F18B433E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0EFD3C-153D-44FB-ACEC-BC5F18B433E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0EFD3C-153D-44FB-ACEC-BC5F18B433E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0EFD3C-153D-44FB-ACEC-BC5F18B433E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05E4E31E-6317-47E5-AE6A-882D6CFBE8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E4E31E-6317-47E5-AE6A-882D6CFBE8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E4E31E-6317-47E5-AE6A-882D6CFBE8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E4E31E-6317-47E5-AE6A-882D6CFBE8AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {068D3E0A-57C6-406B-B4F1-E85DA8303A80}
+	EndGlobalSection
+EndGlobal

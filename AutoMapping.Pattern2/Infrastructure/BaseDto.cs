@@ -5,8 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace AutoMapping.Pattern2.Infrastructure
 {
     public abstract class BaseDto<TDto, TEntity, TKey> : IHaveCustomMapping
-         where TDto : class, new()
-         where TEntity : BaseEntity<TKey>, new()
+         where TEntity : BaseEntity<TKey>
     {
         [Display(Name = "ردیف")]
         public TKey Id { get; set; }

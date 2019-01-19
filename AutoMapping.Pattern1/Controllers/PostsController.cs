@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using AutoMapping.Pattern1.Data;
+using AutoMapping.Pattern1.Data.Entities;
 using AutoMapping.Pattern1.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -85,6 +86,7 @@ namespace AutoMapping.Pattern1.Controllers
         public async Task<ActionResult> Put(long id, PostDto postDto)
         {
             var post = await _applicationDbContext.Posts.FindAsync(id);
+
 
             //Change properties values of a finded Post by id, from PostDto
             var updatePost = postDto.ToEntity(post);

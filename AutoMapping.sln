@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapping.Pattern1", "AutoMapping.Pattern1\AutoMapping.Pattern1.csproj", "{9F0EFD3C-153D-44FB-ACEC-BC5F18B433E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapping.Pattern1", "AutoMapping.Pattern1\AutoMapping.Pattern1.csproj", "{9F0EFD3C-153D-44FB-ACEC-BC5F18B433E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapping.Pattern2", "AutoMapping.Pattern2\AutoMapping.Pattern2.csproj", "{05E4E31E-6317-47E5-AE6A-882D6CFBE8AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapping.Pattern2", "AutoMapping.Pattern2\AutoMapping.Pattern2.csproj", "{05E4E31E-6317-47E5-AE6A-882D6CFBE8AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

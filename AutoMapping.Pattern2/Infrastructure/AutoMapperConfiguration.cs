@@ -27,13 +27,14 @@ namespace AutoMapping.Pattern2.Infrastructure
         {
             var allTypes = assemblies.SelectMany(a => a.ExportedTypes);
 
-            //Find all classes that implement IHaveCustomMapping inteface, like Dto because BaseDto implement this interface 
+            //Find all classes that implement IHaveCustomMapping inteface and create new instance of each
             var list = allTypes.Where(type => type.IsClass && !type.IsAbstract &&
                 type.GetInterfaces().Contains(typeof(IHaveCustomMapping)))
                 .Select(type => (IHaveCustomMapping)Activator.CreateInstance(type));
 
-            //Add new automapper Profile for this class to create mapping
-            config.AddProfile(new CustomMappingProfile(list));
+            //Create a new automapper Profile for this list to create mapping then add to the config
+            var profile = new CustomMappingProfile(list);
+            config.AddProfile(profile);
         }
     }
 }

@@ -13,9 +13,11 @@ public class PostDto : BaseDto<PostDto, Post, long>
     public string CategoryName { get; set; } //=> Category.Name
     public string FullTitle { get; set; } //=> custom mapping for "Title (Category.Name)"
         
-    public override void CustomMappings(IMappingExpression<Post, PostDto> mapping)
+    public override void CustomMappings(IMappingExpression<PostDto, Post> mapping)
     {
-        mapping.ForMember(
+        mapping
+                .ReverseMap()
+                .ForMember(
                 dest => dest.FullTitle,
                 config => config.MapFrom(src => $"{src.Title} ({src.Category.Name})"));
     }

@@ -5,7 +5,7 @@ namespace AutoMapping.Pattern2.Models
 {
     public class CategoryDto : BaseDto<CategoryDto, Category>
     {
-        public int Name { get; set; }
+        public string Name { get; set; }
         public string Description { get; set; }
     }
 }

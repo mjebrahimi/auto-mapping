@@ -56,11 +56,11 @@ namespace AutoMapping.Pattern2.Infrastructure
             }
 
             //Pass mapping expressin to customize mapping in concrete class
-            CustomMappings(mappingExpression.ReverseMap());
+            CustomMappings(mappingExpression);
         }
 
         //Concrete class can override this method to customize mapping
-        public virtual void CustomMappings(IMappingExpression<TEntity, TDto> mapping)
+        public virtual void CustomMappings(IMappingExpression<TDto, TEntity> mapping)
         {
         }
     }

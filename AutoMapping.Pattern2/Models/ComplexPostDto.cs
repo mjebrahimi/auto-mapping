@@ -19,9 +19,11 @@ namespace AutoMapping.Pattern2.Models
 
         public CategoryDto Category { get; set; } //=> mapped from Post.Category
 
-        public override void CustomMappings(IMappingExpression<Post, ComplexPostDto> mapping)
+        public override void CustomMappings(IMappingExpression<ComplexPostDto, Post> mapping)
         {
-            mapping.ForMember(
+            mapping
+                .ReverseMap()
+                .ForMember(
                     dest => dest.FullTitle,
                     config => config.MapFrom(src => $"{src.Title} ({src.Category.Name})"));
         }
